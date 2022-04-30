@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WebApplication1": {
+    "TestPolicies": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
