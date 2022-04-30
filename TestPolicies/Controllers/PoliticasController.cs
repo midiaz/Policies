@@ -20,7 +20,10 @@ namespace TestPolicies.Controllers
 
         private readonly ILogger<PoliticasController> _logger;
 
-
+        /// <summary>
+        /// Test GET ../WeatherForecast using policies
+        /// </summary>
+        /// <param name="useCache"></param>
         [HttpGet]
         [Route("test/WeatherForecast/WaitAndRetry")]
         public async Task<IActionResult> WaitAndRetry(bool? useCache = true)
@@ -37,6 +40,9 @@ namespace TestPolicies.Controllers
             }
         }
 
+        /// <summary>
+        /// Test GET ../WeatherForecast without using policies
+        /// </summary>
         [HttpGet]
         [Route("test/WeatherForecast")]
         public async Task<IActionResult> WeatherForecast()
